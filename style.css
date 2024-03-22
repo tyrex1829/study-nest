@@ -171,6 +171,41 @@ header .my-bars:hover{
     width: 100%;
 }
 
+.company-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    animation: slideFromLeft 1s ease forwards;
+}
+.company-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3.6rem;
+    padding: 1rem;
+    background-color: var(--light-grey);
+    border: none;
+    border-radius: 0.625rem;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    padding: 1.8rem 2.5rem;
+}
+.company-logo{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gray);
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.company-svg-img{
+    height: 1.5rem;
+}
+.company-logo-text{
+    font-size: 1rem;
+}
+
 @media screen and (min-width: 770px) {
 
     nav{
@@ -201,7 +236,7 @@ header .my-bars:hover{
         font-size: 1rem;
     }
     .section-title{
-        font-size: 3.7rem;
+        font-size: 3.2rem;
     }
     .hero-img{
         height: 70vh;
@@ -213,4 +248,13 @@ header .my-bars:hover{
     }
 }
 
+@media screen and (min-width: 700px) {
+    .company-grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .company-title{
+        font-size: 2.3rem;
+        font-weight: bold;
+    }
+}
 
