@@ -438,6 +438,89 @@ header .my-bars:hover{
     color: #2563eb;
 }
 
+/* footer */
+.footer-container{
+    background-color: var(--background-color);
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+}
+.footer{
+    max-width: 1280px;
+    padding: 1.2rem 0 1.2rem 0;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top{
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.social-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.comp-logo{
+    display: flex;
+    justify-content: flex-start;
+}
+.logo-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 1.28rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.logo-link span{
+    color: var(--text-color);
+}
+.filler-text{
+    font-size: 1rem;
+    color: #777;
+}
+.social{
+    display: flex;
+    gap: 0.8rem;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 58%;
+    grid-gap: 5.67rem;
+}
+.footer-grid-heading{
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 1.65rem;
+}
+ul{
+    list-style-type: none;
+}
+.footer-link{
+    color: #777;
+    font-size: 0.875rem;
+}
+.footer-links-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.footer-copywrite{
+    color: var(--gray);
+    font-size: 0.75rem;
+    padding-top: 1.1rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+}
+
 /* madia query to convert into desktop */
 @media screen and (min-width: 770px) {
 
@@ -526,5 +609,31 @@ header .my-bars:hover{
     }
     .news-desc{
         text-align: left;
+    }
+}
+
+/* madia query to convert into mobile */
+@media screen and (max-width: 1080px){
+
+    /* footer */
+    .footer-container{
+        align-items: center;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    .footer-grid{
+        width: 100%;
+    }
+} 
+
+/* madia query to convert into mobile */
+@media screen and (max-width: 640px){
+
+    /* footer */
+    .footer-grid{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
